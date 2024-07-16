@@ -1,6 +1,9 @@
 import { CardsContainer } from "./components/CardsContainer/";
 import products from "./products.json";
+import "/src/components/styles/normalizer.scss";
 
 export const App = () => (
-  <CardsContainer products={ products } />
+  <div className="container">
+    <CardsContainer products={ products } />
+  </div>
 );

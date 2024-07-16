@@ -6,7 +6,6 @@ export const Card = ({
   description,
   price
 }) => {
-  // console.log("name is ", name, description, price);
   return (
     <div className="card">
       <h2 className="card__title">
@@ -25,5 +24,4 @@ export const Card = ({
       </div>
     </div>
   )
-  // console.log(name, description, price)
 };

@@ -1,15 +1,15 @@
 [
-  { "id": 1, "name": "Potato", "description": "Tasty and cheap!" },
-  { "id": 2, "name": "Pear",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 3, "name": "Melon",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 4, "name": "Ice cream",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 5, "name": "Apple",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 6, "name": "Bread",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 7, "name": "Fish",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 8, "name": "Honey",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 9, "name": "Jam",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 10, "name": "Garlic",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 11, "name": "Dumplings",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 12, "name": "Carrot",  "description": "Tasty and cheap!", "price": 43 },
-  { "id": 13, "name": "Eggs",  "description": "Tasty and cheap!", "price": 43 }
+  { "id": 1, "name": "Potato", "description": "Versatile root vegetable, great for roasting or mashing.", "price": 4.5 },
+  { "id": 2, "name": "Pear",  "description": "Sweet and juicy fruit with a crisp texture.", "price": 43 },
+  { "id": 3, "name": "Melon",  "description": "Refreshing fruit with a sweet and hydrating flesh.", "price": 100 },
+  { "id": 4, "name": "Ice cream",  "description": "Delicious frozen treat available in various flavors.", "price": 16.50 },
+  { "id": 5, "name": "Apple",  "description": "Crisp and nutritious fruit enjoyed fresh or in cooking.", "price": 23.90 },
+  { "id": 6, "name": "Bread",  "description": "Basic food staple made from flour, yeast, and water.", "price": 21 },
+  { "id": 7, "name": "Fish",  "description": "Nutritious seafood option rich in omega-3 fatty acids.", "price": 55 },
+  { "id": 8, "name": "Honey",  "description": "Natural sweetener produced by bees from flower nectar.", "price": 230.44 },
+  { "id": 9, "name": "Jam",  "description": "Sweet spread made from fruits and sugar, perfect on toast.", "price": 430.99 },
+  { "id": 10, "name": "Garlic",  "description": "Pungent bulb used to add flavor to various dishes.", "price": 4.59 },
+  { "id": 11, "name": "Dumplings",  "description": "Dough filled with savory ingredients.", "price": 43 },
+  { "id": 12, "name": "Carrot",  "description": "Nutrient-rich root vegetable with a sweet and crunchy taste.", "price": 43 },
+  { "id": 13, "name": "Eggs",  "description": "Versatile cooking ingredient packed with protein and nutrients.", "price": 43 }
 ]
