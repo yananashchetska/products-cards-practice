@@ -10,10 +10,8 @@ export const App = () => {
   const handleButtonClick = (index) => {
     if (selectedIndex === index) {
       setSelectedIndex(-1);
-      // setButtonText('SELECT');
     } else {
       setSelectedIndex(index);
-      // setButtonText('UNSELECT');
     }
   };
 
@@ -32,7 +30,6 @@ export const App = () => {
           { selectedIndex !== -1 &&
             (<img
               onClick={() => handleButtonClick(selectedIndex)}
-            // onClick={handleButtonClick(selectedIndex)}
             className="result__icon"
             src="https://www.svgrepo.com/show/343068/cross-circle.svg"
             alt="cross"
