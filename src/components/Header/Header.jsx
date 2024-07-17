@@ -9,7 +9,10 @@ export const Header = () => (
         SHOP.ua
       </div>
 
-      <div className="nav__menu">menu</div>
+      <img
+        className='nav__menu'
+        src="https://img.icons8.com/?size=100&id=36389&format=png&color=ffffff"
+        alt="menu" />
     </div>
   </header>
 )

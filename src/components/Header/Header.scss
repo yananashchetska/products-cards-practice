@@ -1,6 +1,7 @@
-@import '../styles/utils/vars';
+@import '../../styles/utils/vars';
 
 .header {
+  width: 100vw;
   color: white;
   display: flex;
   background-color: $main-blue;
@@ -15,5 +16,10 @@
 
   &__logo {
     font-size: 32px;
+  }
+
+  &__menu {
+    width: 44px;
+    cursor: pointer;
   }
 }

@@ -1,0 +1,90 @@
+@import "../styles/utils/vars";
+
+.purchase-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-top: 56px;
+
+  &__result {
+    display: flex;
+    margin-top: 16px;
+  }
+}
+
+.result {
+  display: flex;
+  align-items: center;
+
+  &__details {
+    font-size: 20px;
+  }
+
+  &__icon {
+    width: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+}
+
+.card {
+  display: flex;
+  background-color: $main-color;
+  border-radius: 8px;
+  padding: 16px;
+  min-width: $card-min-width;
+  transition: all 0.3s ease-in-out;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  &__title {
+    color: rgb(56, 22, 0);
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: none;
+
+    background-color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
+.info {
+  width: 100%;
+
+  &__price {
+    margin-top: 16px;
+  }
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+
+  &__label,
+  &__value {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.active {
+  background-color: #5c5cbd;
+  color: #e8ddff;
+}
