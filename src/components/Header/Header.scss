@@ -1,0 +1,19 @@
+@import '../styles/utils/vars';
+
+.header {
+  color: white;
+  display: flex;
+  background-color: $main-blue;
+  padding: 26px 55px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: 32px;
+  }
+}

@@ -1,14 +1,30 @@
 /* eslint-disable react/prop-types */
 import './Card.scss';
+import classNames from "classnames";
+import { useState } from 'react';
 
 export const Card = ({
   name,
   description,
   price
 }) => {
+
+  const [activity, setActivity] = useState(false );
+
+  const clickHandler = () => {
+    setActivity(prevActivity => !prevActivity)
+  }
   return (
-    <div className="card">
-      <h2 className="card__title">
+    <div
+      className={classNames("card", {
+        "active": activity === true
+      })}
+      onClick={clickHandler}
+    >
+      <h2
+        className="card__title"
+        style={{color: activity === true && "white"}}
+      >
         {name}
       </h2>
       <div className="card__info info">

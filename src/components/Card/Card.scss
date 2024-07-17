@@ -10,7 +10,6 @@
   &__title {
     color: rgb(56, 22, 0);
   }
-
   &:hover {
     transform: scale(1.1);
   }
@@ -34,4 +33,9 @@
     font-size: 18px;
     font-weight: bold;
   }
+}
+
+.active {
+  background-color: #5c5cbd;
+  color: #e8ddff;
 }
