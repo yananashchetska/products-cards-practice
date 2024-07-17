@@ -1,6 +1,10 @@
 import { useState } from "react";
-import classNames from "classnames";
+import cn from "classnames";
+
 import { Header } from "./components/Header";
+import { ResetIcon } from "./components/page_components/ResetIcon";
+import { Button } from "./components/page_components/Button";
+
 import products from "./products.json";
 import "./App.scss";
 
@@ -18,63 +22,56 @@ export const App = () => {
   return (
     <>
       <Header />
-      <section className="purchase-info">
-        <h1 className="purchase-info__title">Welcome to our shop!</h1>
-
-        <div className="purchase-info__result result">
-          <p className="result__details">
-            {selectedIndex === -1
-              ? "No items were selected"
-              : `You selected ${products[selectedIndex].name}`}
-          </p>
-          { selectedIndex !== -1 &&
-            (<img
-              onClick={() => handleButtonClick(selectedIndex)}
-            className="result__icon"
-            src="https://www.svgrepo.com/show/343068/cross-circle.svg"
-            alt="cross"
-          />)}
-        </div>
-
-      </section>
-
-      <section className="CardsContainer">
-        {products.map((product, index) => {
-          return (
-            <div
-              key={product.id}
-              className={classNames("card", {
-                active: index === selectedIndex,
-              })}
-            >
-              <div className="card__content">
-                <div className="card__info info">
-                  <h2
-                    className="card__title"
-                    style={{ color: index === selectedIndex && "white" }}
-                  >
-                    {product.name}
-                  </h2>
-                  <p className="info__description">{product.description}</p>
-                  <div className="info__price price">
-                    <span className="price__label">Price</span>
-                    <span className="price__value">{product.price}</span>
-                  </div>
-                </div>
-                <button
-                onClick={() => handleButtonClick(index)}
-                className="card__button"
+      <main className="page">
+        <section className="purchase-info">
+          <h1 className="purchase-info__title">Welcome to our shop!</h1>
+          <div className="purchase-info__result result">
+            <p className="result__details">
+              {selectedIndex === -1
+                ? "No items were selected"
+                : `You selected ${products[selectedIndex].name}`}
+            </p>
+            {selectedIndex !== -1 && (
+              <ResetIcon
+                onClick={() => handleButtonClick(selectedIndex)}
+              />
+            )}
+          </div>
+        </section>
+        <section className="CardsContainer">
+          {products.map((product, index) => {
+            return (
+              <div
+                key={product.id}
+                className={cn("card", {
+                  active: index === selectedIndex,
+                })}
               >
-                {index === selectedIndex ? "UNSELECT" : "SELECT"}
-              </button>
-                
+                <div className="card__content">
+                  <div className="card__info info">
+                    <h2
+                      className="card__title"
+                      style={{ color: index === selectedIndex && "white" }}
+                    >
+                      {product.name}
+                    </h2>
+                    <p className="info__description">{product.description}</p>
+                    <div className="info__price price">
+                      <span className="price__label">Price</span>
+                      <span className="price__value">{product.price}</span>
+                    </div>
+                  </div>
+                  <Button
+                    onClick={() => handleButtonClick(index)}
+                  >
+                    {index === selectedIndex ? "UNSELECT" : "SELECT"}
+                  </Button>
+                </div>
               </div>
-            </div>
-          );
-        })}
-      </section>
+            );
+          })}
+        </section>
+      </main>
     </>
   );
-
-  
 };

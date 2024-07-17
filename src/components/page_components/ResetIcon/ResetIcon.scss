@@ -1,0 +1,12 @@
+@import "/src/styles/utils/vars";
+
+.icon {
+  display: inline-block;
+  background-image: url("https://www.svgrepo.com/show/343068/cross-circle.svg");
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  width: $icon-size;
+  height: $icon-size;
+  cursor: pointer;
+}

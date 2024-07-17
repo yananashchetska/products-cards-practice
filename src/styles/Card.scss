@@ -20,10 +20,8 @@
     font-size: 20px;
   }
 
-  &__icon {
-    width: 20px;
+  &__icon { 
     margin-left: 8px;
-    cursor: pointer;
   }
 }
 
@@ -50,18 +48,17 @@
   }
 
   &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 8px;
+    // display: flex; // в компонент
+    // align-items: center; // в компонент
+    // justify-content: center; // в компонент
+    width: 100%;
+    // padding: 8px; // в компонент
     margin-top: 8px;
-    border-radius: 8px;
-    border: none;
-
-    background-color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
+    border-radius: 8px; // в компонент
+    // border: none; // в компонент
+    // background-color: #ffffff;  // в компонент
+    // font-size: 16px; // в компонент
+    // cursor: pointer; // в компонент
   }
 }
 
